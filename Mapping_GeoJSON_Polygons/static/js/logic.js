@@ -1,7 +1,5 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
-// Create the map object with center and zoom level.
-// let map = L.map('mapid').setView([30, 30], 2);
 
 // We create the tile layer that will be the background of our map.
 
@@ -22,8 +20,8 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // Create a base layer that holds both maps.
 let baseMaps = {
-  "Streets": streets,
-   "DSatellite Streets": satelliteStreets
+  Streets: streets,
+  Satellite : satelliteStreets
 };
 
 // Create the map object with center, zoom level and default layer.

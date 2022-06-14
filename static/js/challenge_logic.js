@@ -145,7 +145,7 @@ legend.onAdd = function() {
     L.geoJSON(data, {
       // We turn each feature into a line  on the map.
       color: "orange",
-      wight: 1
+      wight: 7
     }).addTo(tectonicPlates);
     });
 });

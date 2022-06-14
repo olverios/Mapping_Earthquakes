@@ -36,7 +36,7 @@ let tectonicPlates = new L.LayerGroup();
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
   "Earthquakes": allEarthquakes,
-  "Tectonic Plates": allEarthquakes
+  "Tectonic Plates": tectonicPlates
 };
 
 // Then we add a control to the map that will allow the user to change which
@@ -147,7 +147,7 @@ legend.onAdd = function() {
     L.geoJSON(data, {
       // We turn each feature into a line  on the map.
       color: "#FF7F00",
-      wight: 1
+      wight: 0.5
     }).addTo(tectonicPlates);
     });
   
